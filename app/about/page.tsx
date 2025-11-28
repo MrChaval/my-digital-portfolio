@@ -29,29 +29,29 @@ export default function AboutPage() {
           <div className="grid gap-10 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_500px]">
             <div className="flex flex-col justify-center space-y-6">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">John Smith</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Chaval</h2>
                 <p className="text-xl text-muted-foreground">
-                  <span className="text-primary font-semibold">Cybersecurity Consultant & Penetration Tester</span>
+                  <span className="text-primary font-semibold">AI Security Protector & Cybersecurity Specialist</span>
                 </p>
               </div>
               <div className="space-y-4">
                 <p className="text-muted-foreground">
                   I am a dedicated cybersecurity professional with a passion for helping organizations strengthen their
-                  security posture and protect their valuable digital assets. With over 15 years of experience in the
-                  industry, I have worked with clients across various sectors, from financial services and healthcare to
-                  government and technology.
+                  security posture and protect their valuable digital assets. With extensive experience in the industry, 
+                  I have worked across various sectors, from financial services and healthcare to government and technology.
                 </p>
                 <p className="text-muted-foreground">
                   My approach combines technical expertise with a deep understanding of business needs, allowing me to
                   develop security solutions that are both effective and practical. I believe that cybersecurity is not
                   just about implementing technical controls, but also about building a culture of security awareness
-                  and resilience.
+                  and resilience. I am particularly passionate about securing AI agents and implementing advanced
+                  security architectures through the AI Protector methodology.
                 </p>
                 <p className="text-muted-foreground">
                   Throughout my career, I have helped organizations identify and address security vulnerabilities,
-                  implement robust security programs, and respond effectively to security incidents. I am committed to
-                  staying at the forefront of the rapidly evolving cybersecurity landscape and sharing my knowledge with
-                  clients and the broader security community.
+                  implement robust security programs, and respond effectively to security incidents. As an AI Protector 
+                  specialist, I now focus on defending AI-powered applications and MCP servers from evolving threats 
+                  through layered security approaches and advanced threat modeling.
                 </p>
               </div>
             </div>
@@ -61,7 +61,7 @@ export default function AboutPage() {
                 <div className="relative overflow-hidden rounded-xl border border-primary/20 bg-background p-2">
                   <Image
                     src="/cyber-guardian.png"
-                    alt="John Smith - Cybersecurity Professional"
+                    alt="Chaval - AI Security Protector & Cybersecurity Professional"
                     width={500}
                     height={500}
                     className="rounded-lg object-cover w-full h-full"
@@ -87,6 +87,21 @@ export default function AboutPage() {
           </div>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            <Card className="bg-background border-primary/20">
+              <CardHeader className="pb-2">
+                <div className="bg-primary/10 p-3 w-fit rounded-lg mb-4">
+                  <Award className="h-6 w-6 text-primary" />
+                </div>
+                <CardTitle>AI Protector</CardTitle>
+                <CardDescription>Specialist Certification</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground">
+                  10-week comprehensive program in AI agent security, MCP server hardening, and defensive engineering from Ausbiz Consulting.
+                </p>
+              </CardContent>
+            </Card>
+
             <Card className="bg-background border-primary/20">
               <CardHeader className="pb-2">
                 <div className="bg-primary/10 p-3 w-fit rounded-lg mb-4">
@@ -131,18 +146,102 @@ export default function AboutPage() {
                 </p>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* AI Protector Workshop Section */}
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/40">
+        <div className="container px-4 md:px-6">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center mb-10">
+            <div className="space-y-2">
+              <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">Advanced Training</div>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">AI Protector Workshop Certification</h2>
+              <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed">
+                Comprehensive 10-week security-first training in AI agent defense and secure deployment.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid gap-8 md:grid-cols-2">
+            <Card className="bg-background border-primary/20">
+              <CardHeader>
+                <CardTitle className="text-lg">Program Specialization</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <p className="text-muted-foreground">
+                  As an AI Protector specialist through the Ausbiz Consulting AI Protector Workshop, I have completed comprehensive training in:
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                    <span><strong>Secure AI Development Lifecycle:</strong> Shift-left security practices, secure coding standards, and environment hardening for AI agents</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                    <span><strong>MCP Security Architecture:</strong> OAuth 2.1 authentication, Arcjet firewall integration, and secure MCP server deployment</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                    <span><strong>Web Application Security:</strong> Hardened digital portfolios with Vercel Firewall, Clerk authentication, and custom domain protections</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
 
             <Card className="bg-background border-primary/20">
-              <CardHeader className="pb-2">
-                <div className="bg-primary/10 p-3 w-fit rounded-lg mb-4">
-                  <GraduationCap className="h-6 w-6 text-primary" />
-                </div>
-                <CardTitle>M.S. Cybersecurity</CardTitle>
-                <CardDescription>Stanford University</CardDescription>
+              <CardHeader>
+                <CardTitle className="text-lg">Practical Skills Acquired</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                    <span><strong>Offensive Security:</strong> Kali Linux penetration testing, rate limiting evaluation, brute-force testing, and SQL injection mitigation</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                    <span><strong>Advanced Threat Modeling:</strong> Comprehensive MCP security analysis and data flow assessment for AI agents</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                    <span><strong>Executive Reporting:</strong> Security compliance documentation, dashboards, and portfolio-ready security presentations</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="mt-8 grid gap-6 md:grid-cols-3">
+            <Card className="bg-background border-primary/20">
+              <CardHeader className="pb-3">
+                <CardTitle className="text-base">Security Foundations</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  Advanced degree with focus on security architecture and threat intelligence.
+                  Protector mindset establishment, secure development environment setup, and baseline security posture documentation.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-background border-primary/20">
+              <CardHeader className="pb-3">
+                <CardTitle className="text-base">Defensive & Offensive Operations</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground">
+                  WAF protection layers, Arcjet agent-aware shielding, and hands-on penetration testing with Kali Linux.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-background border-primary/20">
+              <CardHeader className="pb-3">
+                <CardTitle className="text-base">Advanced Agent Security</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground">
+                  OAuth 2.1 secured MCP implementation, production hardening, and executive security playbooks delivery.
                 </p>
               </CardContent>
             </Card>
@@ -158,86 +257,164 @@ export default function AboutPage() {
               <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">Expertise</div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Skills & Specializations</h2>
               <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed">
-                Core competencies and specialized knowledge areas in cybersecurity.
+                Core competencies and specialized knowledge areas in cybersecurity and AI protection.
               </p>
             </div>
           </div>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             <div className="space-y-4">
+              <h3 className="text-xl font-bold">AI Agent Security</h3>
+              <ul className="space-y-2">
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-primary" />
+                  <span>MCP Server Hardening</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-primary" />
+                  <span>OAuth 2.1 Authentication</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-primary" />
+                  <span>AI Agent Threat Modeling</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-primary" />
+                  <span>Data Residency Analysis</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-primary" />
+                  <span>Secure AI Development Lifecycle</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="space-y-4">
               <h3 className="text-xl font-bold">Penetration Testing</h3>
               <ul className="space-y-2">
                 <li className="flex items-center gap-2">
                   <CheckCircle className="h-4 w-4 text-primary" />
+                  <span>Kali Linux Offensive Testing</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-primary" />
+                  <span>Rate Limit Evaluation</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-primary" />
+                  <span>Brute-Force Testing</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-primary" />
+                  <span>SQL Injection Mitigation</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-primary" />
                   <span>Web Application Testing</span>
                 </li>
+              </ul>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-xl font-bold">Secure Deployment</h3>
+              <ul className="space-y-2">
                 <li className="flex items-center gap-2">
                   <CheckCircle className="h-4 w-4 text-primary" />
-                  <span>Network Infrastructure Testing</span>
+                  <span>WAF Implementation</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle className="h-4 w-4 text-primary" />
-                  <span>Mobile Application Testing</span>
+                  <span>Arcjet Integration</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle className="h-4 w-4 text-primary" />
-                  <span>Social Engineering Assessments</span>
+                  <span>Vercel Firewall Configuration</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle className="h-4 w-4 text-primary" />
-                  <span>Red Team Operations</span>
+                  <span>Clerk Authentication Setup</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-primary" />
+                  <span>Production Hardening</span>
                 </li>
               </ul>
             </div>
 
             <div className="space-y-4">
-              <h3 className="text-xl font-bold">Security Architecture</h3>
+              <h3 className="text-xl font-bold">Compliance & Reporting</h3>
               <ul className="space-y-2">
                 <li className="flex items-center gap-2">
                   <CheckCircle className="h-4 w-4 text-primary" />
-                  <span>Zero Trust Architecture</span>
+                  <span>Executive Security Briefings</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle className="h-4 w-4 text-primary" />
-                  <span>Cloud Security Design</span>
+                  <span>Compliance Mapping</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle className="h-4 w-4 text-primary" />
-                  <span>Network Security Design</span>
+                  <span>Security Documentation</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle className="h-4 w-4 text-primary" />
-                  <span>Identity & Access Management</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4 text-primary" />
-                  <span>Secure SDLC Implementation</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="space-y-4">
-              <h3 className="text-xl font-bold">Incident Response</h3>
-              <ul className="space-y-2">
-                <li className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4 text-primary" />
-                  <span>Digital Forensics</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4 text-primary" />
-                  <span>Malware Analysis</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4 text-primary" />
-                  <span>Threat Hunting</span>
+                  <span>Risk Assessment Reporting</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle className="h-4 w-4 text-primary" />
                   <span>Incident Response Planning</span>
                 </li>
+              </ul>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-xl font-bold">Threat Intelligence</h3>
+              <ul className="space-y-2">
                 <li className="flex items-center gap-2">
                   <CheckCircle className="h-4 w-4 text-primary" />
-                  <span>Breach Containment & Recovery</span>
+                  <span>AI Agent Attack Surface Analysis</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-primary" />
+                  <span>National Security Considerations</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-primary" />
+                  <span>Australian Case Study Analysis</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-primary" />
+                  <span>Emerging Threat Identification</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-primary" />
+                  <span>Security Risk Matrices</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-xl font-bold">Platform Security</h3>
+              <ul className="space-y-2">
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-primary" />
+                  <span>Claude Desktop Security</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-primary" />
+                  <span>VS Code Copilot Integration</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-primary" />
+                  <span>ChatGPT Developer Mode</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-primary" />
+                  <span>Cloud Data Residency</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-primary" />
+                  <span>Cross-border Data Flow</span>
                 </li>
               </ul>
             </div>
