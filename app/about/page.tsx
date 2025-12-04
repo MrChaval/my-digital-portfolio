@@ -1,5 +1,6 @@
-import { Award, GraduationCap, Briefcase, Calendar, CheckCircle } from "lucide-react"
+import { Award, GraduationCap, Briefcase, Calendar, CheckCircle, Download } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
 import Image from "next/image"
 
 export default function AboutPage() {
@@ -52,6 +53,14 @@ export default function AboutPage() {
                   specialist, I now focus on defending AI-powered applications and MCP servers from evolving threats 
                   through layered security approaches and advanced threat modeling.
                 </p>
+                <div className="pt-4">
+                  <a href="/Chaval_Poolitthinan_Resume.pdf" download>
+                    <Button className="bg-primary hover:bg-primary/90 text-white gap-2">
+                      <Download className="h-4 w-4" />
+                      Download Resume
+                    </Button>
+                  </a>
+                </div>
               </div>
             </div>
             <div className="flex items-center justify-center">
