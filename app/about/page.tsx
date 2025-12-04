@@ -6,12 +6,12 @@ export default function AboutPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-black relative overflow-hidden">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-secondary relative overflow-hidden">
         <div className="container px-4 md:px-6 relative z-10">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl text-white">About Me</h1>
-              <p className="max-w-[700px] text-gray-400 md:text-xl/relaxed">
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">About Me</h1>
+              <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed">
                 Cybersecurity professional with over 15 years of experience protecting organizations from evolving
                 threats.
               </p>
@@ -19,8 +19,7 @@ export default function AboutPage() {
           </div>
         </div>
         {/* Animated background */}
-        <div className="absolute inset-0 bg-grid-white/5 bg-[size:50px_50px] opacity-10"></div>
-        <div className="absolute inset-0 bg-black bg-opacity-80"></div>
+        <div className="absolute inset-0 bg-grid-white/5 bg-[size:50px_50px] opacity-5"></div>
       </section>
 
       {/* Profile Section */}

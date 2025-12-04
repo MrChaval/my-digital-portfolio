@@ -30,12 +30,12 @@ export default async function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-black relative overflow-hidden">
+      <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-background relative overflow-hidden">
         <div className="container px-4 md:px-6 relative z-10">
           <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none bg-clip-text text-transparent bg-gradient-to-r from-primary to-indigo-500">
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none bg-clip-text text-transparent bg-gradient-to-r from-primary via-blue-500 to-primary">
                   Securing Your Digital Future
                 </h1>
                 <p className="max-w-[600px] text-muted-foreground md:text-xl">
@@ -58,41 +58,40 @@ export default async function Home() {
             </div>
             <div className="flex items-center justify-center">
               <div className="relative w-full max-w-[500px] aspect-square">
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full blur-3xl opacity-20 animate-pulse"></div>
-                <div className="relative bg-black/40 backdrop-blur-sm border border-white/10 p-6 rounded-2xl shadow-2xl">
+                <div className="absolute inset-0 bg-gradient-to-r from-primary to-blue-400 rounded-full blur-3xl opacity-15 animate-pulse"></div>
+                <div className="relative bg-white/50 backdrop-blur-sm border border-secondary/30 p-6 rounded-3xl shadow-lg">
                   <div className="grid grid-cols-2 gap-4">
                     <div className="space-y-2 col-span-2">
-                      <div className="h-2 w-[80%] bg-primary/20 rounded-full"></div>
-                      <div className="h-2 w-[60%] bg-primary/20 rounded-full"></div>
+                      <div className="h-2 w-[80%] bg-primary/15 rounded-full"></div>
+                      <div className="h-2 w-[60%] bg-primary/15 rounded-full"></div>
                     </div>
-                    <div className="h-20 bg-primary/10 rounded-lg flex items-center justify-center">
+                    <div className="h-20 bg-primary/10 rounded-2xl flex items-center justify-center">
                       <Lock className="h-8 w-8 text-primary" />
                     </div>
-                    <div className="h-20 bg-primary/10 rounded-lg flex items-center justify-center">
+                    <div className="h-20 bg-primary/10 rounded-2xl flex items-center justify-center">
                       <Shield className="h-8 w-8 text-primary" />
                     </div>
-                    <div className="h-20 bg-primary/10 rounded-lg flex items-center justify-center">
+                    <div className="h-20 bg-primary/10 rounded-2xl flex items-center justify-center">
                       <Server className="h-8 w-8 text-primary" />
                     </div>
-                    <div className="h-20 bg-primary/10 rounded-lg flex items-center justify-center">
+                    <div className="h-20 bg-primary/10 rounded-2xl flex items-center justify-center">
                       <Database className="h-8 w-8 text-primary" />
                     </div>
                     <div className="space-y-2 col-span-2 mt-2">
-                      <div className="h-2 w-[70%] bg-primary/20 rounded-full"></div>
-                      <div className="h-2 w-[50%] bg-primary/20 rounded-full"></div>
+                      <div className="h-2 w-[70%] bg-primary/15 rounded-full"></div>
+                      <div className="h-2 w-[50%] bg-primary/15 rounded-full"></div>
                     </div>
                   </div>
-                  <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-2/3 h-[1px] bg-gradient-to-r from-transparent via-primary/50 to-transparent"></div>
+                  <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-2/3 h-[1px] bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
         {/* Animated background */}
-        <div className="absolute inset-0 bg-grid-white/5 bg-[size:50px_50px] opacity-10"></div>
-        <div className="absolute inset-0 bg-black bg-opacity-80"></div>
-        <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black to-transparent"></div>
-        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black to-transparent"></div>
+        <div className="absolute inset-0 bg-grid-white/5 bg-[size:50px_50px] opacity-5"></div>
+        <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-background to-transparent"></div>
+        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-background to-transparent"></div>
       </section>
 
       {/* Database Error Alert */}
@@ -292,15 +291,15 @@ export default async function Home() {
       </section>
 
       {/* Newsletter Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-black relative overflow-hidden">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-secondary relative overflow-hidden">
         <div className="container px-4 md:px-6 relative z-10">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">Newsletter</div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                 Stay Updated on Cybersecurity Trends
               </h2>
-              <p className="max-w-[600px] text-gray-400 md:text-xl/relaxed">
+              <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed">
                 Subscribe to our newsletter for the latest cybersecurity news, tips, and insights.
               </p>
             </div>
@@ -310,8 +309,7 @@ export default async function Home() {
           </div>
         </div>
         {/* Animated background */}
-        <div className="absolute inset-0 bg-grid-white/5 bg-[size:50px_50px] opacity-10"></div>
-        <div className="absolute inset-0 bg-black bg-opacity-80"></div>
+        <div className="absolute inset-0 bg-grid-white/5 bg-[size:50px_50px] opacity-5"></div>
       </section>
 
       {/* Recent Blog Posts */}
