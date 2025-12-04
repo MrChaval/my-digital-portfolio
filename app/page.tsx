@@ -39,8 +39,8 @@ export default async function Home() {
                   Securing Your Digital Future
                 </h1>
                 <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                  Expert cybersecurity solutions to protect your organization from evolving threats. Penetration
-                  testing, security audits, and incident response services.
+                  Hi, I'm Chaval Poolitthinan. I provide expert cybersecurity solutions to protect organizations from evolving threats. 
+                  Specializing in AI security, penetration testing, security audits, and incident response services.
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">

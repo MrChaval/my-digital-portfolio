@@ -28,7 +28,7 @@ export default function AboutPage() {
           <div className="grid gap-10 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_500px]">
             <div className="flex flex-col justify-center space-y-6">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Chaval</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Chaval Poolitthinan</h2>
                 <p className="text-xl text-muted-foreground">
                   <span className="text-primary font-semibold">AI Security Protector & Cybersecurity Specialist</span>
                 </p>
@@ -441,17 +441,17 @@ export default function AboutPage() {
               </div>
               <div className="w-full md:w-[calc(50%-4rem)] bg-background p-5 rounded-lg border border-primary/20 shadow-sm">
                 <div className="flex items-center justify-between space-x-2 mb-1">
-                  <h3 className="font-bold text-lg">Principal Security Consultant</h3>
+                  <h3 className="font-bold text-lg">AI Security Protector & Cybersecurity Specialist</h3>
                   <time className="font-semibold text-primary flex items-center">
                     <Calendar className="h-4 w-4 mr-1" />
-                    2018 - Present
+                    2025 - Present
                   </time>
                 </div>
-                <p className="text-muted-foreground mb-2">CyberShield Consulting</p>
+                <p className="text-muted-foreground mb-2">Freelance / Independent Consultant</p>
                 <p className="text-sm text-muted-foreground">
-                  Leading complex security assessments and penetration tests for Fortune 500 clients. Developing custom
-                  security frameworks and methodologies. Mentoring junior security consultants and delivering executive
-                  briefings on critical security findings.
+                  Providing specialized cybersecurity consulting with focus on AI agent security, MCP server hardening, 
+                  and defensive engineering. Conducting penetration testing, security assessments, and threat modeling 
+                  for organizations implementing AI-powered applications.
                 </p>
               </div>
             </div>
@@ -462,17 +462,17 @@ export default function AboutPage() {
               </div>
               <div className="w-full md:w-[calc(50%-4rem)] bg-background p-5 rounded-lg border border-primary/20 shadow-sm">
                 <div className="flex items-center justify-between space-x-2 mb-1">
-                  <h3 className="font-bold text-lg">Senior Security Engineer</h3>
+                  <h3 className="font-bold text-lg">AI Protector Workshop Participant</h3>
                   <time className="font-semibold text-primary flex items-center">
                     <Calendar className="h-4 w-4 mr-1" />
-                    2014 - 2018
+                    2025
                   </time>
                 </div>
-                <p className="text-muted-foreground mb-2">SecureTech Solutions</p>
+                <p className="text-muted-foreground mb-2">Ausbiz Consulting - Advanced Training Program</p>
                 <p className="text-sm text-muted-foreground">
-                  Designed and implemented security architectures for cloud migrations. Led vulnerability management
-                  program and security operations center (SOC) initiatives. Conducted internal security assessments and
-                  developed remediation strategies.
+                  Completed comprehensive 10-week AI Protector Workshop covering secure AI development lifecycle, 
+                  MCP security architecture, defensive and offensive operations, penetration testing with Kali Linux, 
+                  and advanced agent security practices with OAuth 2.1 implementation.
                 </p>
               </div>
             </div>
@@ -483,17 +483,17 @@ export default function AboutPage() {
               </div>
               <div className="w-full md:w-[calc(50%-4rem)] bg-background p-5 rounded-lg border border-primary/20 shadow-sm">
                 <div className="flex items-center justify-between space-x-2 mb-1">
-                  <h3 className="font-bold text-lg">Security Analyst</h3>
+                  <h3 className="font-bold text-lg">Cybersecurity Professional Development</h3>
                   <time className="font-semibold text-primary flex items-center">
                     <Calendar className="h-4 w-4 mr-1" />
-                    2010 - 2014
+                    Ongoing
                   </time>
                 </div>
-                <p className="text-muted-foreground mb-2">Global Financial Services</p>
+                <p className="text-muted-foreground mb-2">Continuous Learning & Skill Development</p>
                 <p className="text-sm text-muted-foreground">
-                  Performed security monitoring and incident response for a major financial institution. Conducted
-                  vulnerability assessments and security awareness training. Assisted in developing security policies
-                  and procedures.
+                  Actively building expertise in cybersecurity with focus on penetration testing, security auditing, 
+                  incident response, and emerging threats. Building and maintaining security portfolio through real-world 
+                  security projects and threat analysis.
                 </p>
               </div>
             </div>
