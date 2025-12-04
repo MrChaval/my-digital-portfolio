@@ -441,17 +441,17 @@ export default function AboutPage() {
               </div>
               <div className="w-full md:w-[calc(50%-4rem)] bg-background p-5 rounded-lg border border-primary/20 shadow-sm">
                 <div className="flex items-center justify-between space-x-2 mb-1">
-                  <h3 className="font-bold text-lg">AI Security Protector & Cybersecurity Specialist</h3>
+                  <h3 className="font-bold text-lg">Director of IT Operations</h3>
                   <time className="font-semibold text-primary flex items-center">
                     <Calendar className="h-4 w-4 mr-1" />
-                    2025 - Present
+                    Jan 2020 - Present
                   </time>
                 </div>
-                <p className="text-muted-foreground mb-2">Freelance / Independent Consultant</p>
+                <p className="text-muted-foreground mb-2">MIMO Tech Co., Ltd.</p>
                 <p className="text-sm text-muted-foreground">
-                  Providing specialized cybersecurity consulting with focus on AI agent security, MCP server hardening, 
-                  and defensive engineering. Conducting penetration testing, security assessments, and threat modeling 
-                  for organizations implementing AI-powered applications.
+                  Led comprehensive IT infrastructure modernization and digital transformation initiatives. Oversaw network 
+                  security implementation, cloud migration strategies, and establishment of enterprise-grade cybersecurity 
+                  protocols. Managed IT team operations while directing strategic technology planning for 500+ employees.
                 </p>
               </div>
             </div>
@@ -462,17 +462,17 @@ export default function AboutPage() {
               </div>
               <div className="w-full md:w-[calc(50%-4rem)] bg-background p-5 rounded-lg border border-primary/20 shadow-sm">
                 <div className="flex items-center justify-between space-x-2 mb-1">
-                  <h3 className="font-bold text-lg">AI Protector Workshop Participant</h3>
+                  <h3 className="font-bold text-lg">IT Systems Administrator</h3>
                   <time className="font-semibold text-primary flex items-center">
                     <Calendar className="h-4 w-4 mr-1" />
-                    2025
+                    Aug 2017 - Dec 2019
                   </time>
                 </div>
-                <p className="text-muted-foreground mb-2">Ausbiz Consulting - Advanced Training Program</p>
+                <p className="text-muted-foreground mb-2">MIMO Tech Co., Ltd.</p>
                 <p className="text-sm text-muted-foreground">
-                  Completed comprehensive 10-week AI Protector Workshop covering secure AI development lifecycle, 
-                  MCP security architecture, defensive and offensive operations, penetration testing with Kali Linux, 
-                  and advanced agent security practices with OAuth 2.1 implementation.
+                  Managed enterprise IT infrastructure including servers, networks, and security systems. Implemented 
+                  system backup and disaster recovery procedures, conducted security audits, and maintained compliance 
+                  with industry standards. Provided technical support and resolved critical infrastructure issues.
                 </p>
               </div>
             </div>
@@ -483,17 +483,38 @@ export default function AboutPage() {
               </div>
               <div className="w-full md:w-[calc(50%-4rem)] bg-background p-5 rounded-lg border border-primary/20 shadow-sm">
                 <div className="flex items-center justify-between space-x-2 mb-1">
-                  <h3 className="font-bold text-lg">Cybersecurity Professional Development</h3>
+                  <h3 className="font-bold text-lg">Network & Security Specialist</h3>
                   <time className="font-semibold text-primary flex items-center">
                     <Calendar className="h-4 w-4 mr-1" />
-                    Ongoing
+                    Mar 2015 - Jul 2017
                   </time>
                 </div>
-                <p className="text-muted-foreground mb-2">Continuous Learning & Skill Development</p>
+                <p className="text-muted-foreground mb-2">Ausbiz Consulting Group</p>
                 <p className="text-sm text-muted-foreground">
-                  Actively building expertise in cybersecurity with focus on penetration testing, security auditing, 
-                  incident response, and emerging threats. Building and maintaining security portfolio through real-world 
-                  security projects and threat analysis.
+                  Designed and implemented secure network architectures for enterprise clients. Conducted penetration 
+                  testing, vulnerability assessments, and security audits. Managed firewall configurations, VPN systems, 
+                  and security incident response protocols for organizations across various sectors.
+                </p>
+              </div>
+            </div>
+
+            <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full border border-primary/20 bg-background shadow-sm z-10 md:group-odd:ml-8 md:group-even:mr-8">
+                <Briefcase className="h-5 w-5 text-primary" />
+              </div>
+              <div className="w-full md:w-[calc(50%-4rem)] bg-background p-5 rounded-lg border border-primary/20 shadow-sm">
+                <div className="flex items-center justify-between space-x-2 mb-1">
+                  <h3 className="font-bold text-lg">IT Support Technician</h3>
+                  <time className="font-semibold text-primary flex items-center">
+                    <Calendar className="h-4 w-4 mr-1" />
+                    Jan 2013 - Feb 2015
+                  </time>
+                </div>
+                <p className="text-muted-foreground mb-2">Tech Support Solutions Ltd.</p>
+                <p className="text-sm text-muted-foreground">
+                  Provided technical support and system administration for enterprise clients. Managed user accounts, 
+                  system configurations, and hardware maintenance. Resolved IT issues, installed software, and maintained 
+                  system documentation for multiple corporate environments.
                 </p>
               </div>
             </div>
