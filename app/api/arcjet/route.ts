@@ -11,13 +11,14 @@ const aj = arcjet({
     detectBot({
       mode: "LIVE", // Blocks requests. Use "DRY_RUN" to log only
       // Block all bots except the following
+      // Any bot NOT in this allow list will be blocked
       allow: [
-        "CATEGORY:SEARCH_ENGINE", // Google, Bing, etc
-        //"CURL", //Allow curl requests
+        "CATEGORY:SEARCH_ENGINE", // Google, Bing, etc (includes Googlebot)
         // Uncomment to allow these other common bot categories
         // See the full list at https://arcjet.com/bot-list
-        "CATEGORY:MONITOR", // Uptime monitoring services
-        //"CATEGORY:PREVIEW", // Link previews e.g. Slack, Discord
+        // "CATEGORY:MONITOR", // Uptime monitoring services
+        // "CATEGORY:PREVIEW", // Link previews e.g. Slack, Discord
+        // "CURL", // Uncomment to allow curl requests
       ],
     }),
     // Create a token bucket rate limit. Other algorithms are supported.
@@ -35,7 +36,14 @@ const aj = arcjet({
 
 export async function GET(req: Request) {
   const decision = await aj.protect(req, { requested: 5 }); // Deduct 5 tokens from the bucket
-  console.log("Arcjet decision", decision);
+  
+  // Enhanced logging for debugging
+  console.log("Arcjet decision:", {
+    conclusion: decision.conclusion,
+    reason: decision.reason,
+    ip: decision.ip,
+    userAgent: req.headers.get("user-agent"),
+  });
 
   if (decision.isDenied()) {
     if (decision.reason.isRateLimit()) {
@@ -45,7 +53,12 @@ export async function GET(req: Request) {
       );
     } else if (decision.reason.isBot()) {
       return NextResponse.json(
-        { error: "No bots allowed", message: "Bots are not permitted to access this resource.", reason: decision.reason },
+        { 
+          error: "No bots allowed", 
+          message: "Bots are not permitted to access this resource.", 
+          userAgent: req.headers.get("user-agent"),
+          reason: decision.reason 
+        },
         { status: 403 },
       );
     } else {
