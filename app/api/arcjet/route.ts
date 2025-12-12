@@ -1,5 +1,5 @@
 import arcjet, { detectBot, shield, tokenBucket } from "@arcjet/next";
-import { isSpoofedBot } from "@arcjet/inspect";
+import { isSpoofedBot, isMissingUserAgent } from "@arcjet/inspect";
 import { NextResponse } from "next/server";
 
 const aj = arcjet({
@@ -35,6 +35,44 @@ const aj = arcjet({
 });
 
 export async function GET(req: Request) {
+  const userAgent = req.headers.get("user-agent") || "";
+  
+  // First line of defense: Block requests without User-Agent
+  // Most legitimate clients send User-Agent headers
+  if (!userAgent || userAgent.trim() === "") {
+    console.log("Blocked: Missing User-Agent header");
+    return NextResponse.json(
+      { 
+        error: "Bad Request", 
+        message: "User-Agent header is required" 
+      },
+      { status: 400 }
+    );
+  }
+
+  // Second line of defense: Block suspicious User-Agents
+  const suspiciousPatterns = [
+    /bad\s*bot/i,
+    /evil/i,
+    /scraper/i,
+    /hack/i,
+    /attack/i,
+    /malicious/i,
+    /spam/i,
+  ];
+
+  if (suspiciousPatterns.some(pattern => pattern.test(userAgent))) {
+    console.log("Blocked: Suspicious User-Agent pattern:", userAgent);
+    return NextResponse.json(
+      { 
+        error: "Forbidden", 
+        message: "Bot detected", 
+        userAgent: userAgent 
+      },
+      { status: 403 }
+    );
+  }
+
   const decision = await aj.protect(req, { requested: 5 }); // Deduct 5 tokens from the bucket
   
   // Enhanced logging for debugging
@@ -42,8 +80,17 @@ export async function GET(req: Request) {
     conclusion: decision.conclusion,
     reason: decision.reason,
     ip: decision.ip,
-    userAgent: req.headers.get("user-agent"),
+    userAgent: userAgent,
   });
+
+  // Check for missing User-Agent (backup check)
+  if (decision.results.some(isMissingUserAgent)) {
+    console.log("Blocked: Missing User-Agent detected by Arcjet");
+    return NextResponse.json(
+      { error: "Bad Request", message: "User-Agent header required" },
+      { status: 400 }
+    );
+  }
 
   if (decision.isDenied()) {
     if (decision.reason.isRateLimit()) {
